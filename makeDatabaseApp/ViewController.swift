@@ -77,20 +77,6 @@ class ViewController: UIViewController,UITextFieldDelegate {
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         self.view.endEditing(true)
     }
-//    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-//
-//        let cKcal = Double(cTextField.text!)! * 4.0
-//        let pKcal = Double(pTextField.text!)! * 4.0
-//        let fKcal = Double(fTextField.text!)! * 9.0
-//        let totalKcal = (floor(cKcal + pKcal + fKcal))
-//        print(cKcal)
-//        print(pKcal)
-//        print(fKcal)
-//        print(totalKcal)
-//        kcalTextField.text = String(totalKcal)
-//        textField.resignFirstResponder()
-//        return true
-//    }
 
     @IBAction func registerButton(_ sender: Any) {
         guard let foodName = foodNameTextField.text else {return}
